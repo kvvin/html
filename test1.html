@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Kevin" />
-    <meta name="description" content="Things I learn for html development." />
-    <title>My first Web Page</title>
-    <link
-      rel="icon"
-      href="ScreenShot-2022-1-29_16-21-26.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="main.css" type="text/css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Kevin" />
+  <meta name="description" content="Things I learn for html development." />
+  <title>My first Web Page</title>
+  <link rel="icon" href="ScreenShot-2022-1-29_16-21-26.png" type="image/x-icon" />
+  <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+
+<body>
+  <header>
     <h1>My goals for the year!</h1>
 
-    <hr>
-
     <nav>
-        <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planning a vacation</a>
-            </li>
-            <li>
-                <a href="#images">God of War Images</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a vacation</a>
+        </li>
+        <li>
+          <a href="#images">God of War Images</a>
+        </li>
+      </ul>
     </nav>
-    <hr>
-    <section id = "html">
+  </header>
+
+  <hr />
+
+  <main>
+
+    <article id="html">
       <h2>Im ready to learn HTML</h2>
       <p>This is my first webpage</p>
 
-      <img src="img/1.png" alt="God of war Image 1" title = "God of War 1" width = "500">
-      <h3>My daily schedule</h3>
-      <p>Let me tell you how</p>
-      <ol>
-        <li>I learn more about web dev.</li>
-        <li>I plan out my schedule.</li>
-        <li>
-          I use resources from
-          <abbr title="My dom nom">
-            <a href="https://developer.mozilla.org/"> MDN </a> </abbr
-          >.
-        </li>
-      </ol>
-    </section>
+      <section>
+        <h3>HTML5</h3>
 
-    <hr>
+        <img src="img/1.png" alt="God of war Image 1" title="God of War 1" width="500" />
+        <figure>
+          <figcaption>An Example of HTML code</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          </p>
+        </figure>
+      </section>
 
-    <section id = "vacation">
+      <section>
+        <h3>My daily schedule</h3>
+        <p>Let me tell you how</p>
+        <ol>
+          <li>I learn more about web dev.</li>
+          <li>I plan out my schedule.</li>
+          <li>
+            I use resources from
+            <abbr title="My dom nom">
+              <a href="https://developer.mozilla.org/"> MDN </a> </abbr>.
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+            <p>I start at <time datetime="08:00">8 am</time> and i write code for <time datetime="PT3H"></time> hours
+              every morning.</p>
+          </details>
+        </aside>
+      </section>
+    </article>
+
+    <hr />
+
+    <article id="vacation">
       <h2>Im also planning a vacation</h2>
       <p><em>Ive been working really hard</em></p>
       <p>I live in Kerala so i want to go home</p>
 
       <!-- TODO add more places -->
+      <section>
+        <h3>Places i want to visit</h3>
+        <ul>
+          <li>
+            <p>some where with good food</p>
+          </li>
+          <li>
+            <p>I have heard good things about:</p>
+            <address>
+              Bolgatty, Marine Drive<br />
+              Kochi, Ernakulam, Kerala<br />
+              India, 630456
+            </address>
+          </li>
+        </ul>
+      </section>
+      
+      <section>
 
-      <h3>Places i want to visit</h3>
-      <ul>
-        <li><p>some where with good food</p></li>
-        <li>
-          <p>I have heard good things about:</p>
-          <address>
-            Bolgatty, Marine Drive<br />
-            Kochi, Ernakulam, Kerala<br />
-            India, 630456
-          </address>
-        </li>
-      </ul>
+        <h3>Places i want to avoid</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>I hear this is <strong>cold!</strong></dd>
 
-      <h3>Places i want to avoid</h3>
-      <dl>
-        <dt>North Pole</dt>
-        <dd>I hear this is <strong>cold!</strong></dd>
+          <dt>South Pole</dt>
+          <dd>This is also cold.</dd>
 
-        <dt>South Pole</dt>
-        <dd>This is also cold.</dd>
+          <dt>Mountain Tops</dt>
+          <dd>These are also cold.</dd>
+        </dl>
 
-        <dt>Mountain Tops</dt>
-        <dd>These are also cold.</dd>
-      </dl>
-    </section>
-    <hr>
-    <section id = "images">
-        <h4>Some more God of War Images</h4>
-        <figure>
-            <img src="img/2.png" alt="God of War img 2" title= "GOD 2" width="300" loading="lazy"> 
-            <figcaption>
-                GOD 2
-            </figcaption>    
-        </figure>
-        <figure>
-            <img src="img/4.png" alt="God of War img 3" title= "GOD 3" width="300" loading="lazy">
-            <figcaption>
-                GOD 3
-            </figcaption>
-        </figure>
-            
-         
-    </section>
+      </section>
+    </article>
 
     <hr>
-    &lt;&lt;&lt; &copy;<a href="about.html">Kevin Thomas</a> &gt;&gt;&gt;
+
+    <article id="images">
+      <h4>Some more God of War Images</h4>
+      <figure>
+        <img src="img/2.png" alt="God of War img 2" title="GOD 2" width="300" loading="lazy" />
+        <figcaption>GOD 2</figcaption>
+      </figure>
+      <figure>
+        <img src="img/4.png" alt="God of War img 3" title="GOD 3" width="300" loading="lazy" />
+        <figcaption>GOD 3</figcaption>
+      </figure>
+    </article>
+
+  </main>
+
+  <hr>
+
+  <footer>
     <p>
-        <a href="#">Back To Top</a>
+      &lt;&lt;&lt; &copy;<a href="about.html">Kevin Thomas</a> &gt;&gt;&gt;
     </p>
-  </body>
+    <p>
+      <a href="#">Back To Top</a>
+    </p>
+  </footer>
+
+</body>
+
 </html>
